@@ -1,0 +1,41 @@
+/*CSS for buttons*/
+
+.btn{ /*buttons that are just text*/
+    cursor: pointer;
+    border: none;
+    color: #363232;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0);
+}
+
+.icon-btn{ /*buttons that are images/icons*/
+    height: 64px; 
+    max-width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
+.hamburger-menu btn{
+ justify-content: center;
+ padding: 0%;
+}
+
+.prev-page-btn{ /* back arrow button group including text */
+    padding-left: 3rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    position: relative;
+    padding-bottom: 3%;
+  }
+
+
+@media (max-width: 700px) {
+  .prev-page-btn{
+    padding-left: 1rem;
+  }
+}
