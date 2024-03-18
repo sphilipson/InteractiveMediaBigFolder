@@ -20,9 +20,6 @@
  padding: 0%;
 }
 
-.prev-page-btn{ /* back arrow button group including text */
-    padding-left: 3rem;
-}
 
 .button-container{
     display: flex;
@@ -35,7 +32,7 @@
 
 
 @media (max-width: 700px) {
-  .prev-page-btn{
+  .btn{
     padding-left: 1rem;
   }
 }

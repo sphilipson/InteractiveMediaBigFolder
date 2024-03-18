@@ -1,166 +1,74 @@
+/*CSS for overall page layout*/
 
-/*creates 2 column grid structure, photo and info side-by-side*/
-.grid { 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*border: 2px solid #ffc0cb;*/
-    margin-bottom: auto;
-    align-items: self-end;
-}
-
-a {
-    text-decoration: none; 
-    color: inherit;
+body { 
+    padding-top: 41px;
+      margin: 0;
+      overflow-x: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #6caa55;
+    }
+    
+  .page{ /*allows page to be seen underneath navbar*/
+      margin-top: 6rem;
   }
-
-
-.column-aligned{
-    margin-left: 10rem;
-    /*border: 2px solid red;*/
-    max-height: 100%;
-
-}
-
-.product-image{
   
-    /*border: 2px solid yellow;*/
-    max-height: 100%;
-    padding-left: 10rem;
-    margin-right: 10rem;
-    align-items: self-end;
+  /* Custom Cursor
+  
+  Change the code --> your image/gif */
+  
+  * {
+    cursor:url("../img/frog32.png"), auto;
     
-   
-}
-.product-photo{
-    align-content: center;
-    max-width: 100%;
-    /*border: 2px solid black;*/
-    max-height: 100%;
-}
-
-.subtitle-container{
-    padding-top: 1em;
-   /* border: 2px orange;*/
-   
+    }
+    /* list begins, flex-wrap makes any items move to the next row when the viewport size is changed/too small
+      keeps the  list responsive*/
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
     
-}
-
-.heading-container{
-    padding-top: 75%;
+      .product-list-products { /*25% makes the product take up 
+        25% of the space in the container, subtracting 2% from the 100%, % keeps the products responsive*/
+        width: calc(25% - 2%);
+        margin-bottom: 2%;
+      }
     
-}
-
-.description-container{
-    display: grid;
-    /*border: 2px solid #ffc0cb;*/
-    margin-bottom: auto;
-    padding-top: 30%;
-    padding-bottom: 30%;
-    margin-left: 10em;
-    margin-right: 10em;
-
+      .product-list-item {
+        display: flex;
+        flex-direction: column;
+      }
     
-}
-
-
-
-
-/* Tablet size layout*/
-
-@media (max-width: 1100px) {
-
-    .column-aligned{
-        margin-left: 5rem;
+    .product-list-image {
+      position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    
     }
-
-    .product-description{
-        margin: 4rem 8rem 2rem 8rem;
+    
+    .product-list-image img { /*object-fit: contain scales the content 
+      to fit proportionally within the container.*/
+      max-width: 100%;
+      max-height: auto;
+      object-fit: contain;
     }
-
-    .product-information{
-        margin-left: 4rem;
-        padding-left: 2rem;
-        margin-right: 4rem;
-        padding-top: 2rem;
-        margin-bottom: 3rem;
+    
+    /*@media makes pages responsive, when the screen size is below 920px,
+    there will be three products per row, and wehn below 600px there will be 2 per row (for mobile)*/
+    @media (max-width: 920px){
+      .product-list-products{
+        width: calc(33.33% - 2%);
+      }
     }
-
-    .product-image{
-        margin-top: 2rem;
-        width: 25rem;
-        height: auto;
+    
+    @media (max-width: 600px){
+      .product-list-products {
+        width: calc(50% - 2%);
+      }
     }
-
-    .product-options{
-        padding: 1rem 2rem 1rem 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .subtitle-font{
-        padding-top:1rem;
-        padding-bottom:2rem;
-    }
-
-    .item-subtitle{
-        padding-bottom: 1rem;
-    }
-
-    .option-description{
-        display: none;
-    }
-
-}
-
-
-/*mobile sized layout*/
-@media (max-width: 750px) {
-
-    .grid{
-        display: block;
-    }
-
-    .column-aligned{
-        margin-left: 1rem;      
-    }
-
-    .column-centre{
-        margin-left: 1rem;      
-    }
-
-
-    .back-page{
-        display:none;
-    }
-
-    .fine-text{
-        padding-bottom:0.5rem;
-    }
-
-    .product-options{
-        display: none;
-    }
-
-    .product-description{
-        margin: 3rem 2rem 2rem 3rem;
-    }
-
-    .product-information{
-        margin-left: 3rem;
-        padding-left: 1rem;
-        margin-right: 2rem;
-        padding-top: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .dimension-image{
-        display: none;
-    }
-
-    .list-info{
-        padding-bottom: 2rem;
-    }
-
-}
-
-
-
+     
+      

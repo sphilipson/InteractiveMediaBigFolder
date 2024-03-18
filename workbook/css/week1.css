@@ -1,4 +1,7 @@
 
+.body {
+    background-color: #5698d1;
+}
 /*creates 2 column grid structure, photo and info side-by-side*/
 .grid { 
     display: grid;
@@ -6,6 +9,7 @@
     /*border: 2px solid #ffc0cb;*/
     margin-bottom: auto;
     align-items: self-end;
+    padding-top: 3%;
 }
 
 a {
@@ -21,7 +25,7 @@ a {
 
 }
 
-.product-image{
+.class-image-container-container{
   
     /*border: 2px solid yellow;*/
     max-height: 100%;
@@ -31,11 +35,11 @@ a {
     
    
 }
-.product-photo{
+.class-photo{
     align-content: center;
     max-width: 100%;
-    /*border: 2px solid black;*/
     max-height: 100%;
+    
 }
 
 .subtitle-container{
@@ -62,6 +66,10 @@ a {
     
 }
 
+.page-grid{
+    padding-top: 30%;
+    
+}
 
 
 
@@ -83,9 +91,9 @@ a {
         margin-right: 4rem;
         padding-top: 2rem;
         margin-bottom: 3rem;
-    }
+    }x
 
-    .product-image{
+    .class-image-container-container{
         margin-top: 2rem;
         width: 25rem;
         height: auto;

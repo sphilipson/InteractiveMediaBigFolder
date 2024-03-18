@@ -1,27 +1,26 @@
 /*CSS for typography*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Madimi_One/madimi.ttf);
+}
 
 .bold {
     font-weight: bold;
 }
 
-.text-btn {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color: #363232;
-    text-decoration: none;
-}
 
 .heading-font {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: myFirstFont, Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     color: #363232;
     margin: 0;
     align-items: flex-end;
+   
     
 }
 
 .subtitle-font {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: myFirstFont, Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     font-weight:lighter;
     font-style: italic;
@@ -36,26 +35,18 @@ a:link {
 }
     
 
-h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.1vw;
-    justify-content: center;
-    align-items: center;
-    color: black;
+
+.body-text{
+    font-family: myFirstFont, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height:1.5;
+    color: #363232;
     text-align: center;
 }
 
 
-.body-text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    line-height:1.5;
-    color: #363232;
-}
-
-
 .fine-text{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: myFirstFont, Arial, Helvetica, sans-serif;
     font-size: 0.7rem;
     color: grey;
     line-height:1.15;
@@ -68,7 +59,7 @@ h4 {
 }
 
 .title-font{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: myFirstFont, Arial, Helvetica, sans-serif;
     font-size: 3rem;
     color:#363232;
     margin:0;
@@ -77,7 +68,7 @@ h4 {
 }
 
 .product-title {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: myFirstFont, Arial, Helvetica, sans-serif;
     font-size: 1.2vw;
     justify-content: center ;
     align-items: center;

@@ -21,7 +21,7 @@ a {
 
 }
 
-.product-image{
+.class-image-container-container{
   
     /*border: 2px solid yellow;*/
     max-height: 100%;
@@ -31,7 +31,7 @@ a {
     
    
 }
-.product-photo{
+.class-photo{
     align-content: center;
     max-width: 100%;
     /*border: 2px solid black;*/
@@ -85,7 +85,7 @@ a {
         margin-bottom: 3rem;
     }
 
-    .product-image{
+    .class-image-container-container{
         margin-top: 2rem;
         width: 25rem;
         height: auto;
