@@ -72,11 +72,11 @@ a {
       margin-left: 5rem;
   }
 
-  .product-description{
+  .pic-description{
       margin: 4rem 8rem 2rem 8rem;
   }
 
-  .product-information{
+  .pic-information{
       margin-left: 4rem;
       padding-left: 2rem;
       margin-right: 4rem;
@@ -90,7 +90,7 @@ a {
       height: auto;
   }
 
-  .product-options{
+  .pic-options{
       padding: 1rem 2rem 1rem 2rem;
       margin-bottom: 1rem;
   }
@@ -135,15 +135,15 @@ a {
       padding-bottom:0.5rem;
   }
 
-  .product-options{
+  .pic-options{
       display: none;
   }
 
-  .product-description{
+  .pic-description{
       margin: 3rem 2rem 2rem 3rem;
   }
 
-  .product-information{
+  .pic-information{
       margin-left: 3rem;
       padding-left: 1rem;
       margin-right: 2rem;

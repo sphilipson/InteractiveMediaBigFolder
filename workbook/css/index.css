@@ -25,7 +25,7 @@ Change the code --> your image/gif */
   }
   /* list begins, flex-wrap makes any items move to the next row when the viewport size is changed/too small
     keeps the  list responsive*/
-    .product-list {
+    .pic-list {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -33,18 +33,18 @@ Change the code --> your image/gif */
       padding-right: 10%;
     }
   
-    .product-list-products { /*25% makes the product take up 
-      25% of the space in the container, subtracting 2% from the 100%, % keeps the products responsive*/
+    .pic-list-pics { /*25% makes the pic take up 
+      25% of the space in the container, subtracting 2% from the 100%, % keeps the pics responsive*/
       width: calc(25% - 2%);
       margin-bottom: 2%;
     }
   
-    .product-list-item {
+    .pic-list-item {
       display: flex;
       flex-direction: column;
     }
   
-  .product-list-image {
+  .pic-list-image {
     position: relative;
   width: 100%;
   padding: 10px;
@@ -53,7 +53,7 @@ Change the code --> your image/gif */
   
   }
   
-  .product-list-image img { /*object-fit: contain scales the content 
+  .pic-list-image img { /*object-fit: contain scales the content 
     to fit proportionally within the container.*/
     max-width: 100%;
     max-height: auto;
@@ -61,15 +61,15 @@ Change the code --> your image/gif */
   }
   
   /*@media makes pages responsive, when the screen size is below 920px,
-  there will be three products per row, and wehn below 600px there will be 2 per row (for mobile)*/
+  there will be three pics per row, and wehn below 600px there will be 2 per row (for mobile)*/
   @media (max-width: 920px){
-    .product-list-products{
+    .pic-list-pics{
       width: calc(33.33% - 2%);
     }
   }
   
   @media (max-width: 600px){
-    .product-list-products {
+    .pic-list-pics {
       width: calc(50% - 2%);
     }
   }
